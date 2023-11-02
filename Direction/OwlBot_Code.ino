@@ -1,4 +1,4 @@
-//THIS ONE WORKS: TB6612
+//THIS ONE WORKS: motor type TB6612
 
 
 /*
@@ -8,6 +8,8 @@
  * @LastEditTime: 2019-10-14 17:54:21
  * @LastEditors: Please set LastEditors
  */
+
+
 #include "ApplicationFunctionSet_xxx0.h"
 
 ApplicationFunctionSet Application_FunctionSet;
