@@ -1,6 +1,9 @@
-// Written by Shunzo Hida
+// Language: Arduino
+// Board: Arduino Nano
 // Motor type: TB6612
 // Adapted from tutorial at https://www.elegoo.com/blogs/arduino-projects/elegoo-owlbot-smart-robot-car-tutorial
+// Last Editors: Shunzo Hida
+// Last Edit: 13:20 UTC-7 Nov. 2 2023
 
 #define Standby 4
 #define PowerA 9
@@ -28,10 +31,12 @@ void motorControl(bool dirA, int spdA, bool dirB, int spdB){
   analogWrite(PowerB, spdB);
 }
 
-void stop(){
+void stop(void){
   move(0,0);
 }
-
+// most other movement functions are based off of
+//    move(int, int). Please note that it does 
+//    NOT stop the motor(s) after it's done
 void move(int lSpd, int rSpd){
   motorControl((lSpd>0), abs(lSpd), (rSpd>0), abs(rSpd));
 }
