@@ -12,7 +12,7 @@ const int InputA = 8;
 const int InputB = 7;
 
 
-void init(void){
+void wake(void){
   pinMode(Standby, OUTPUT); // used when sending commands to motors
   pinMode(PowerA, OUTPUT); // spins motor A at a specific speed
   pinMode(PowerB, OUTPUT); // spins motor B at a specific speed
@@ -75,7 +75,7 @@ void right(int spd, int dur){
 
 
 void setup(void){
-  init();
+  wake();
 }
 
 void loop(void){
