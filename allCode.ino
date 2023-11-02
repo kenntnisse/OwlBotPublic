@@ -5,11 +5,11 @@
 // Last Editors: Shunzo Hida
 // Last Edit: 13:20 UTC-7 Nov. 2 2023
 
-#define Standby 4
-#define PowerA 9
-#define PowerB 6
-#define InputA 8
-#define InputB 7
+const int Standby = 4;
+const int PowerA = 9;
+const int PowerB = 6;
+const int InputA = 8;
+const int InputB = 7;
 
 
 void init(void){
