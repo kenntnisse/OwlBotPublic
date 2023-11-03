@@ -76,10 +76,17 @@ void right(int spd, int dur){
 
 void setup(void){
   wake();
+  forward(100);
+  stop();
+  left(100);
+  right(100);
+  back(20);
+  stop();
+  move(90,30);
+  stop();
 }
 
 void loop(void){
-
 
 }
 
